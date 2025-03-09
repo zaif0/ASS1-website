@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Lexend+Mega:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    color: #F5F5DC;
+    font-size: 1.2em;
+}
+
+p{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 450px; /* Full viewport height */
+    margin: 0;
+    font-size: 1em;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #F5F5DC;
+    
+}
+
+header{
+    color: #F5F5DC;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1%;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    grid-area: header;
+}
+
+.class1{
+    color: #F5F5DC;
+    font: bold;
+    font-size: 0.4em;
+
+}
+
+a{
+    text-decoration: none;
+    color: #F5F5DC;
+    
+}
+
+nav{
+    grid-area: nav;
+    color: #ffffff;
+    background-color: #05091b;
+    grid-area: nav;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+} 
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #05091b;
+    color: white;
+    grid-area: footer;
+}
+
+body {
+    background: 
+        linear-gradient(to bottom, rgba(13, 20, 49, 0.651), rgba(13, 20, 49, 1)), 
+        url(gaming.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 40em;
+    background-color: #0D1431;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        ". main ."
+        "footer footer footer";
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(13, 20, 49, 1), rgba(13, 20, 49, 1));
+    background-color: #0D1431;
+}
+
+/* Background image ONLY for the home page */
+body.home {
+    background: 
+        linear-gradient(to bottom, rgba(13, 20, 49, 0.651), rgba(13, 20, 49, 1)), 
+        url(gaming.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 40em;
+    background-color: #0D1431;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* General styles */
+body {
+    background-color: #0D1431;
+    color: #F5F5DC;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 0.5em;
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Each Project Item Styling */
+.project-item {
+    background-color: #2C2F45;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1em;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #05091b;
+    color: white;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* bbbbbbbbbbbbbbbbbbbbbbbbbbbbb /*
+
+body {
+    background-color: #0D1431;
+    color: #F5F5DC;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 0.5em;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 20px;
+}
+
+.contact-form {
+    background-color: #2C2F45;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #05091b;
+    background-color: #e6e6e6;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #05091b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #05091b;
+    color: white;
+}
