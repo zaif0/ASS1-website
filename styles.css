@@ -57,13 +57,16 @@ nav{
     grid-area: nav;
 }
 
-nav li{
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Spaces links evenly */
+    align-items: center;
+    padding: 10px;
     list-style: none;
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
+nav li {
+    margin: 0 15px; /* Adds some spacing between items */
 }
 
 main{
@@ -294,3 +297,71 @@ footer {
     background-color: #05091b;
     color: white;
 }
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* General Nav Styles */
+nav {
+    background-color: #05091b;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hide Checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Desktop Navigation */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    padding: 10px 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile Dropdown */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show hamburger menu on mobile */
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #05091b;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    #menu-toggle:checked + .menu {
+        display: flex; /* Show menu when checkbox is checked */
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/*     fsssddfffffffsffffffs */
