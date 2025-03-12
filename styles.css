@@ -403,3 +403,9 @@ nav {
     border-color: #05091b; /* Dark blue border focus */
 }
 
+.report-content a {
+    display: block; /* Forces each link onto a new line */
+    margin: 5px 0; /* Adjusts spacing */
+    text-decoration: none; /* Optional: Removes underline */
+    color: #F5F5DC; /* Ensures links match your theme */
+}
