@@ -5,38 +5,26 @@
     padding: 0;
 }
 
-i{
-    color: #F5F5DC;
-    font-size: 1.2em;
-}
-
-p{
+p{ /* Main page text */
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 450px; /* Full viewport height */
+    justify-content: center; 
+    align-items: center; 
+    height: 25.5em; 
     margin: 0;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: "Atkinson Hyperlegible Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: bold;
     font-style: normal;
     color: #F5F5DC;
-    
 }
 
-.demo-main{
-    align-items: flex-start;
-}
-
-header{
+header{ 
     color: #F5F5DC;
     font-size: 2.2em;
     text-align: center;
     margin-top: 1%;
     font-family: "Atkinson Hyperlegible Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: bold;
     font-style: normal;
     grid-area: header;
 }
@@ -45,6 +33,7 @@ header{
     color: #F5F5DC;
     font: bold;
     font-size: 0.4em;
+    font-weight: bold;
 
 }
 
@@ -113,16 +102,12 @@ body {
     background-color: #0D1431;
 }
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
-/* General styles */
 body {
     background-color: #0D1431;
     color: #F5F5DC;
     font-family: "Atkinson Hyperlegible Mono", serif;
 }
 
-/* Header styles */
 header {
     text-align: center;
     margin-top: 2%;
@@ -138,7 +123,6 @@ header h2 {
     font-size: 0.5em;
 }
 
-/* Grid Layout for Projects */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -147,7 +131,6 @@ header h2 {
     justify-items: center;
 }
 
-/* Each Project Item Styling */
 .project-item {
     background-color: #2C2F45;
     border-radius: 8px;
@@ -171,7 +154,6 @@ header h2 {
     font-size: 1em;
 }
 
-/* Footer styles */
 footer {
     position: fixed;
     bottom: 0;
@@ -188,15 +170,6 @@ footer {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* bbbbbbbbbbbbbbbbbbbbbbbbbbbbb /*
-
-body {
-    background-color: #0D1431;
-    color: #F5F5DC;
-    font-family: "Atkinson Hyperlegible Mono", serif;
-}
-
-/* Header styles */
 header {
     text-align: center;
     margin-top: 2%;
@@ -287,9 +260,6 @@ footer {
     color: white;
 }
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
-/* General Nav Styles */
 nav {
     background-color: #05091b;
     padding: 10px 0;
@@ -352,9 +322,7 @@ nav {
         padding: 15px;
     }
 }
-
-/*     fsssddfffffffsffffffs */
-
+    
 .report-container {
     background-color: #2C2F45; 
     border-radius: 8px;
@@ -367,7 +335,7 @@ nav {
 
 .report-container h2 {
     font-size: 2em;
-    color: #F5F5DC; /* Beige text */
+    color: #F5F5DC;
     margin-bottom: 15px;
 }
 
@@ -378,43 +346,61 @@ nav {
     border: 1px solid #ccc;
     padding: 10px;
     font-size: 1em;
-    background-color: #1E2235; /* Darker background inside */
-    color: #F5F5DC; /* Beige text */
+    background-color: #1E2235; 
+    color: #F5F5DC; 
     resize: none;
 }
 
 .report-container textarea:focus {
     outline: none;
-    border-color: #05091b; /* Dark blue border focus */
+    border-color: #05091b; 
 }
 
 .report-content a {
-    display: block; /* Forces each link onto a new line */
-    margin: 5px 0; /* Adjusts spacing */
-    text-decoration: none; /* Optional: Removes underline */
-    color: #F5F5DC; /* Ensures links match your theme */
+    display: block; 
+    margin: 5px 0; 
+    text-decoration: none; 
+    color: #F5F5DC; 
 }
 
 /* Background Video Styling */
 .bg-video {
     position: fixed;
     top: 0;
-    right: 0; /* Aligns video to the right, like the image */
-    width: 40em; /* Same size as previous image */
-    height: 100vh; /* Full height */
+    right: 0; 
+    width: 40em; 
+    height: 100vh; 
     object-fit: cover;
     filter: brightness(80%);
-    z-index: -1; /* Keeps video behind content */
+    z-index: -1; 
 }
 
 /* Ensures text remains visible over the video */
 body {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Slight dark overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: #F5F5DC;
     font-family: "Atkinson Hyperlegible Mono", serif;
 }
 
+.demo-main{
+    align-items: flex-start;
+}
 
+.report-screenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 15px; /* Adds spacing between images */
+    justify-content: center; /* Centers grid content */
+    padding: 20px;
+}
 
+.report-screenshots img {
+    width: 100%; /* Ensures images take full width of the grid cell */
+    max-width: 85em; /* Adjust this if needed */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
 
