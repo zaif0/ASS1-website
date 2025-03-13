@@ -31,7 +31,7 @@ p{
 
 header{
     color: #F5F5DC;
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: center;
     margin-top: 1%;
     font-family: "Atkinson Hyperlegible Mono", serif;
@@ -94,9 +94,6 @@ footer{
 }
 
 body {
-    background: 
-        linear-gradient(to bottom, #0d1431a6, #0d1431), 
-        url(gaming.jpeg);
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: fixed;
@@ -113,18 +110,6 @@ body {
 
 body {
     background: linear-gradient(to bottom, rgba(13, 20, 49, 1), rgba(13, 20, 49, 1));
-    background-color: #0D1431;
-}
-
-/* Background image ONLY for the home page */
-body.home {
-    background: 
-        linear-gradient(to bottom, rgba(13, 20, 49, 0.651), rgba(13, 20, 49, 1)), 
-        url(gaming.jpeg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-attachment: fixed;
-    background-size: 40em;
     background-color: #0D1431;
 }
 
@@ -145,7 +130,7 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
@@ -178,7 +163,7 @@ header h2 {
 }
 
 .project-item h3 {
-    font-size: 1.8em;
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
@@ -219,7 +204,7 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 10px;
 }
 
@@ -248,7 +233,7 @@ header h2 {
 .contact-form h3 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 .contact-form label {
@@ -409,3 +394,27 @@ nav {
     text-decoration: none; /* Optional: Removes underline */
     color: #F5F5DC; /* Ensures links match your theme */
 }
+
+/* Background Video Styling */
+.bg-video {
+    position: fixed;
+    top: 0;
+    right: 0; /* Aligns video to the right, like the image */
+    width: 40em; /* Same size as previous image */
+    height: 100vh; /* Full height */
+    object-fit: cover;
+    filter: brightness(80%);
+    z-index: -1; /* Keeps video behind content */
+}
+
+/* Ensures text remains visible over the video */
+body {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight dark overlay */
+    color: #F5F5DC;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+}
+
+
+
+
