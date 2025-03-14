@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+main {
+    flex: 1; /* Pushes the footer down */
+}
+
 p{ /* Main page text */
     display: flex;
     justify-content: center; 
@@ -71,7 +75,7 @@ aside{
 } 
 
 footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -153,17 +157,6 @@ header h2 {
 
 .project-item p {
     font-size: 1em;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #05091b;
-    color: white;
 }
 
 .project-item:hover {
@@ -255,16 +248,7 @@ header h2 {
     background-color: #333;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #05091b;
-    color: white;
-}
+
 
 nav {
     background-color: #05091b;
@@ -434,6 +418,19 @@ body {
 
 .demo-main{
     align-items: flex-start;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #05091b;
+    color: white;
+    position: relative;
 }
 
 .report-screenshots {
